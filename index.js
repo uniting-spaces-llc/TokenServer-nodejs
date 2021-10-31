@@ -2,7 +2,7 @@ var express = require('express');
 var {AccessToken} = require('agora-access-token');
 var {Token, Priviledges} = AccessToken;
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3002;
 
 if (!(process.env.APP_ID && process.env.APP_CERTIFICATE)) {
     throw new Error('You must define an APP_ID and APP_CERTIFICATE');
